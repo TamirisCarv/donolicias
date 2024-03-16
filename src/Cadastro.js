@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import foto from './login_image.png';
-import googleIcon from './google-icon.svg'; 
+import googleIcon from './google-icon.svg';
 
 const Cadastro = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [emailError, setEmailError] = useState(false);
   const [senhaError, setSenhaError] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://accounts.google.com/gsi/client';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, [])
 
   const validarEmail = (value) => {
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:\.[A-Za-z]{2,})?$/;
@@ -47,7 +55,7 @@ const Cadastro = () => {
     if (!validarEmail(email) || !validarSenha(senha)) {
       alert("Preencha corretamente o e-mail e a senha!");
     } else {
-      
+
       window.location.href = "/dashboard";
     }
   };
@@ -80,12 +88,24 @@ const Cadastro = () => {
               </div>
             </form>
             <div className="terms">
-              <label htmlFor="terms" className="terms-label">Não tem cadastro? <Link to="/dashboard">Cadastrar</Link></label>
+              <label htmlFor="terms" className="terms-label">Não tem cadastro? <Link to="/login">Cadastrar</Link></label>
             </div>
-            <button className="google-login" onClick={() => alert("Logar com o Google")}>
-              <span>Logar com o Google</span>
-              <img src={googleIcon} alt="Google Icon" />
-            </button>
+            <div id="g_id_onload"
+              data-client_id="827530296413-3uqvmhgvkjt76cmmo9vn2m5k17imdcch.apps.googleusercontent.com"
+              data-context="signin"
+              data-ux_mode="redirect"
+              data-login_uri="https://donolicias.onrender.com"
+              data-auto_prompt="false">
+            </div>
+
+            <div class="g_id_signin"
+              data-type="standard"
+              data-shape="rectangular"
+              data-theme="outline"
+              data-text="signin_with"
+              data-size="large"
+              data-logo_alignment="left">
+            </div>
           </div>
         </div>
       </main>
