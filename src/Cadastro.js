@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import foto from './login_image.png';
-import googleIcon from './google-icon.svg';
 
 const Cadastro = () => {
   const [email, setEmail] = useState("");
@@ -10,12 +8,14 @@ const Cadastro = () => {
   const [senhaError, setSenhaError] = useState(false);
 
   useEffect(() => {
+   
     const script = document.createElement('script');
     script.src = 'https://accounts.google.com/gsi/client';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
-  }, [])
+
+  }, [history, location.search])
 
   const validarEmail = (value) => {
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:\.[A-Za-z]{2,})?$/;
@@ -84,7 +84,7 @@ const Cadastro = () => {
                 </div>
               </fieldset>
               <div className="footer2">
-                <button type="submit">Logar</button>
+                <button type="submit" className="button-login">Logar</button>
               </div>
             </form>
             <div className="terms">

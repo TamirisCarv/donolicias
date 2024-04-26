@@ -1,0 +1,271 @@
+/* Estilos para a página de cadastro */
+
+.body1 {
+    background-color: #ff1ca0;
+    display: flex;
+    flex-direction: row; /* Mudança para flex-direction: row */
+    justify-content: space-around; /* Espaçamento igual entre os itens */
+    margin-top:50px;
+    margin-left: -80px;
+  }
+  
+  #form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-top:200px;
+    border-radius: 15px;
+    margin: 20px;
+    width: 400px; /* Largura ajustável conforme necessário */
+  }
+
+  #lista-container h2{
+    color:#fff;
+  }
+  
+  #form-container h2 {
+    color: #e6008a;
+    margin-bottom: 10px;
+  }
+  
+  #form-container label {
+    color: #0077a9;
+    font-size: 15px;
+    
+  }
+  
+  #form-container input {
+    width: 100%;
+    background-color:#dddddd;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border:none;
+    border-radius: 15px;
+  }
+  
+  #form-container .custom-button {
+    background-color: #ff1ca0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%; /* Largura total para ocupar todo o contêiner */
+  }
+  
+  #form-container .custom-button:hover {
+    background-color: #e6008a;
+  }
+  
+  
+  #lista-container {
+    background-color: transparent;
+    margin: 20px;
+    width: 510px; /* Mesma largura do campo de busca */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-right: 100px;
+    margin-left: -300px;
+    margin-top: 100px;
+    border: none;
+  }
+  
+  #lista-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px; /* Bordas arredondadas */
+    border: none;
+    z-index: 10;
+  }
+ 
+  
+  #lista-container th,
+  #lista-container td {
+    padding: 8px;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  #lista-container th {
+    background-color: #0077a9;
+    color: white;
+    font-weight: bold;
+  }
+  #lista-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px; /* Bordas arredondadas */
+    overflow: hidden; /* Para ocultar as bordas arredondadas que excedem o contêiner da tabela */
+  }
+  
+  #lista-container tbody tr:nth-child(even) {
+    background-color: #ff99cc; /* Cor de fundo para linhas pares (rosinha claro) */
+  }
+  
+  #lista-container tbody tr:nth-child(odd) {
+    background-color: #ff99cc; /* Cor de fundo para linhas ímpares (azul claro) */
+  }
+  
+  #lista-container input[type="text"] {
+    width: 510px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    background-color:#dddddd;
+    color: #0077a9;
+    border-radius: 5px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination button.active {
+    background-color: #dddddd;
+  }
+
+  
+  button.custom-button:hover {
+    background-color: #0077a9;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Estilos para a página de cadastro */
+  
+    .body1 {
+      background-color: #ff1ca0;
+      display: flex;
+      flex-direction: column; /* Mudança para flex-direction: column */
+      align-items: center; /* Alinhamento dos itens ao centro */
+      justify-content: center; /* Centralizar verticalmente */
+      margin-top: 50px;
+    }
+  
+    #lista-container {
+      width: 200px !important; /* Reduzindo a largura da tabela */
+      margin-left: 80px !important;
+    }
+
+    #lista-container input[type="text"] {
+      width: 300px; /* Largura ajustável para preencher todo o contêiner */
+      padding: 8px;
+      margin-bottom: 15px;
+      border: none;
+      background-color: #dddddd;
+      color: #0077a9;
+      border-radius: 5px;
+    }
+  
+    #form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 15px;
+      margin-left: 90px;
+      width: 300px; /* Largura ajustável conforme necessário */
+    }
+  
+    #form-container h2 {
+      color: #e6008a;
+      margin-bottom: 10px;
+    }
+  
+    #form-container label {
+      color: #0077a9;
+      font-size: 15px;
+    }
+  
+    #form-container input {
+      width: calc(100% - 20px); /* Largura ajustável com menos margens */
+      background-color: #dddddd;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: none;
+      border-radius: 15px;
+    }
+  
+    #form-container .custom-button {
+      background-color: #ff1ca0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%; /* Largura total para ocupar todo o contêiner */
+    }
+  
+    #form-container .custom-button:hover {
+      background-color: #e6008a;
+    }
+  
+    #lista-container table {
+      display: block; /* Alterando o tipo de display para block */
+      width: 300px; /* Definindo a largura da tabela como 100% */
+      border-collapse: separate; /* Separando as bordas das células */
+      border-spacing: 0; /* Espaçamento entre as células */
+    }
+  
+    #lista-container th,
+    #lista-container td {
+      display: block; /* Alterando o tipo de display para block */
+      width: 300px; /* Largura total */
+      text-align: left; /* Alinhamento do texto à esquerda */
+    }
+  
+    #lista-container th {
+      background-color: #0077a9;
+      color: white;
+      font-weight: bold;
+    }
+  
+    #lista-container tbody tr:nth-child(even),
+    #lista-container tbody tr:nth-child(odd) {
+      background-color: #ff99cc; /* Cor de fundo para linhas ímpares e pares */
+      margin-bottom: 10px; /* Espaçamento entre as linhas */
+      border-radius: 10px; /* Bordas arredondadas */
+    }
+  
+    #lista-container tbody tr:last-child {
+      margin-bottom: 0; /* Removendo o espaçamento da última linha */
+    }
+  
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .pagination button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      border: 1px solid #dddddd;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+  
+    .pagination button:hover {
+      background-color: #f2f2f2;
+    }
+  
+    .pagination button.active {
+      background-color: #dddddd;
+    }
+  
+    button.custom-button:hover {
+      background-color: #0077a9;
+    }
+  }
+  

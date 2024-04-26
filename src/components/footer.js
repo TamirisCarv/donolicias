@@ -6,8 +6,7 @@ export default function Footer() {
       
       <footer>
      
-     
-     <div className="escolha">Sua melhor escolha!</div>
+  
          
           
       

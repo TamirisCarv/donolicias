@@ -318,3 +318,633 @@ article {
   margin-left: 40%;
 
 }
+@media only screen and (max-width: 844px) {
+  header {
+    background-color: #008ac6;
+    padding-bottom: 20px;
+    
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   margin-left:33px;
+    
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100px;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-left:-10vw;
+    margin-top:10px;
+  }
+  
+  .nav-links {
+   display:none;
+  }
+  
+  .nav-links li {
+    margin-right: 25px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .login-button a {
+    background-color:  #ff1ca0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top:300px;
+    
+    font-weight: 700;
+    
+   
+  }
+  .login-button  {
+    
+    margin-top:-50px;
+    margin-left: 250px;
+    
+    
+    
+   
+  }
+
+  .container {
+    display: flex;
+    background-color: #ff1ca0;
+    min-height: 41vw;
+  }
+  
+  .banner {
+    position: absolute;
+  
+    right: 0px;
+    width: 50vw;
+    z-index: 999;
+  }
+  
+  
+  .slogan {
+    font-size: 3.5vw;
+    line-height: 1;
+  }
+  
+  .slogansub {
+    font-size: 1vw;
+    line-height: 1, 5vw;
+    width: 35vw;
+  }
+  
+  article {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15vw;
+    margin-top: 12vw;
+  }
+  
+  .circuloBlur {
+    width: 200px;
+    height: 200px;
+    background-color: #f3ebf0;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    filter: blur(100px);
+    z-index: 999;
+  
+  
+  }
+  /* Article.css */
+  
+  .container {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top:200px;
+  }
+  
+  
+  
+  .riscado {
+    text-decoration: line-through;
+   font-weight: 600;
+  }
+  
+  .destacado {
+    
+    font-size: 7.4vw;
+    font-weight: 800;
+    
+   
+  }
+  
+  .slogansub {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+   
+    font-size: 1.5vw;
+    font-weight: 600;
+  }
+  
+  .section {
+    background-image: url('./components/bannermobile.png');
+    
+   height: 520px;
+  margin-left:-30px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top:0vw;
+  }
+  
+  .content {
+    text-align: center; 
+  }
+  
+  .slogansub {
+   display:none;
+  }
+  
+  .section2 {
+    background-image: url('./components/banner2.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 50vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+  }
+  .catalogo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 500;
+    background-color: #ff1ca0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    margin-right: -960px;
+    margin-top: 250px;
+  }
+  
+  .catalogo:hover {
+    background-color: #0077a9; 
+  }
+  
+  .section3 {
+    background-image: url('./components/bannersobre.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 40vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+  }
+  
+  .beneficios.cont{
+    margin-left:-10vw;
+  }
+  
+  .beneficios {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2.6vw;
+    font-weight: 700;
+    margin-left:-35vw;
+  
+  }
+  
+  .textobe{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.6vw;
+    width: 40vw;
+    margin-left:-35vw;
+    box-shadow: #000000;
+  
+  }
+  
+  .section4 {
+    background-image: url('./components/delivery.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 40vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+  }
+  
+  .imagem-container {
+    display: flex;
+  
+  }
+  
+  .delivery {
+    font-family: 'Montserrat', sans-serif;
+    color: #0077a9;
+    font-size: 2.6vw;
+    font-weight: 700;
+    margin-left:55vw;
+    margin-top:-10vw;
+  
+  }
+  
+  
+  
+  .textode{
+    
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-size: 1.7vw;
+      font-weight: 500;
+      background-color: #ff1ca0;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer; 
+      margin-left: 65vw;
+      margin-top: 0px;
+    }
+  
+    .app {
+      margin-top: 20vw;
+      margin-left: -20vw;
+      width: 150px;
+    
+    }
+    
+    
+    .textode:hover {
+      background-color: #0077a9; 
+    }
+  
+    footer{
+      background-color: #ff1ca0;
+     
+    }
+  .escolha{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-left: 40%;
+  
+  }
+}
+
+
+@media only screen and (min-width: 404px) and (max-width: 808px) {
+  header {
+    background-color: #008ac6;
+    padding-bottom: 20px;
+    
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   margin-left:33px;
+    
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100px;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-left:-10vw;
+    margin-top:10px;
+  }
+  
+  .nav-links {
+   display:none;
+  }
+  
+  .nav-links li {
+    margin-right: 25px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .login-button a {
+    background-color:  #ff1ca0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top:300px;
+    
+    font-weight: 700;
+    
+   
+  }
+  .login-button  {
+    
+    margin-top:-50px;
+    margin-left: 250px;
+    
+    
+    
+   
+  }
+
+  .container {
+    display: flex;
+    background-color: #ff1ca0;
+    min-height: 41vw;
+  }
+  
+  .banner {
+    position: absolute;
+  
+    right: 0px;
+    width: 50vw;
+    z-index: 999;
+  }
+  
+  
+  .slogan {
+    font-size: 3.5vw;
+    line-height: 1;
+  }
+  
+  .slogansub {
+    font-size: 1vw;
+    line-height: 1, 5vw;
+    width: 35vw;
+  }
+  
+  article {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15vw;
+    margin-top: 12vw;
+  }
+  
+  .circuloBlur {
+    width: 200px;
+    height: 200px;
+    background-color: #f3ebf0;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    filter: blur(100px);
+    z-index: 999;
+  
+  
+  }
+  /* Article.css */
+  
+  .container {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top:200px;
+  }
+  
+  
+  
+  .riscado {
+    text-decoration: line-through;
+   font-weight: 600;
+  }
+  
+  .destacado {
+    
+    font-size: 7.4vw;
+    font-weight: 800;
+    
+   
+  }
+  
+  .slogansub {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+   
+    font-size: 1.5vw;
+    font-weight: 600;
+  }
+  
+  .section {
+    background-image: url('./components/bannermobile.png');
+    
+   height: 700px;
+  margin-left:-30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top:0vw;
+  }
+  
+  .content {
+    text-align: center; 
+  }
+  
+  .slogansub {
+   display:none;
+  }
+  
+  .section2 {
+    background-image: url('./components/banner2.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 50vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+  }
+  .catalogo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 500;
+    background-color: #ff1ca0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    margin-right: -960px;
+    margin-top: 250px;
+  }
+  
+  .catalogo:hover {
+    background-color: #0077a9; 
+  }
+  
+  .section3 {
+    background-image: url('./components/bannersobre.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 40vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+  }
+  
+  .beneficios.cont{
+    margin-left:-10vw;
+  }
+  
+  .beneficios {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2.6vw;
+    font-weight: 700;
+    margin-left:-35vw;
+  
+  }
+  
+  .textobe{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.6vw;
+    width: 40vw;
+    margin-left:-35vw;
+    box-shadow: #000000;
+  
+  }
+  
+  .section4 {
+    background-image: url('./components/delivery.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 40vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+  }
+  
+  .imagem-container {
+    display: flex;
+  
+  }
+  
+  .delivery {
+    font-family: 'Montserrat', sans-serif;
+    color: #0077a9;
+    font-size: 2.6vw;
+    font-weight: 700;
+    margin-left:55vw;
+    margin-top:-10vw;
+  
+  }
+  
+  
+  
+  .textode{
+    
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-size: 1.7vw;
+      font-weight: 500;
+      background-color: #ff1ca0;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer; 
+      margin-left: 65vw;
+      margin-top: 0px;
+    }
+  
+    .app {
+      margin-top: 20vw;
+      margin-left: -20vw;
+      width: 150px;
+    
+    }
+    
+    
+    .textode:hover {
+      background-color: #0077a9; 
+    }
+  
+    footer{
+      background-color: #ff1ca0;
+     
+    }
+  .escolha{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-left: 40%;
+  
+  }
+}
+/* Estilos do footer */
+footer {
+  background-color: #ff1ca0;
+  padding: 3vw;
+}
+
+.escolha {
+  font-size: 14px;
+  margin-left: 30%;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import perfil from './perfil.png';
 import { Link } from "react-router-dom";
-import { BxMenu, BxSearch, BxBell, BxCloudDownload, BxReceipt, BxFilter, BxCheckCircle, BxXCircle, BxDotsVerticalRounded, BxLogOutCircle, BxsDashboard, BxStoreAlt, BxAnalyse, BxMessageSquareDots, BxGroup, BxCog, BxDollarCircle, BxShowAlt, BxLineChart } from 'boxicons';
+import { BxMenu, BxBell, BxCloudDownload, BxReceipt, BxFilter, BxCheckCircle, BxXCircle, BxDotsVerticalRounded, BxLogOutCircle, BxsDashboard, BxStoreAlt, BxAnalyse, BxMessageSquareDots, BxGroup, BxCog, BxDollarCircle, BxShowAlt, BxLineChart } from 'boxicons';
 
 import './dashboard.css';
 
@@ -10,10 +10,6 @@ const Dashboard = () => {
         const sideLinks = document.querySelectorAll('.sidebar .side-menu li a:not(.logout)');
         const sideBar = document.querySelector('.sidebar');
         const menuBar = document.querySelector('.content nav .bx.bx-menu');
-        const searchBtn = document.querySelector('.content nav form .form-input button');
-        const searchBtnIcon = document.querySelector('.content nav form .form-input button .bx');
-        const searchForm = document.querySelector('.content nav form');
-        const toggler = document.getElementById('theme-toggle');
 
         sideLinks.forEach(item => {
             const li = item.parentElement;
@@ -29,35 +25,11 @@ const Dashboard = () => {
             sideBar.classList.toggle('close');
         });
 
-        searchBtn.addEventListener('click', function (e) {
-            if (window.innerWidth < 576) {
-                e.preventDefault();
-                searchForm.classList.toggle('show');
-                if (searchForm.classList.contains('show')) {
-                    searchBtnIcon.classList.replace('bx-search', 'bx-x');
-                } else {
-                    searchBtnIcon.classList.replace('bx-x', 'bx-search');
-                }
-            }
-        });
-
         window.addEventListener('resize', () => {
             if (window.innerWidth < 768) {
                 sideBar.classList.add('close');
             } else {
                 sideBar.classList.remove('close');
-            }
-            if (window.innerWidth > 576) {
-                searchBtnIcon.classList.replace('bx-x', 'bx-search');
-                searchForm.classList.remove('show');
-            }
-        });
-
-        toggler.addEventListener('change', function () {
-            if (this.checked) {
-                document.body.classList.add('dark');
-            } else {
-                document.body.classList.remove('dark');
             }
         });
     }, []);
@@ -72,7 +44,7 @@ const Dashboard = () => {
                 </a>
                 <ul className="side-menu">
                     <li><a href="#"><i className='bx bxs-dashboard'></i>Dashboard</a></li>
-                    <li><a href="#"><i className='bx bx-store-alt'></i>Catálogo</a></li>
+                    <li><Link to="/catalogo"><i className='bx bx-store-alt'></i>Catálogo</Link></li>
                     <li className="active"><a href="#"><i className='bx bx-analyse'></i>Dados</a></li>
                     <li><a href="#"><i className='bx bx-message-square-dots'></i>Chat</a></li>
                     <li><a href="#"><i className='bx bx-group'></i>Usuários</a></li>
@@ -91,17 +63,8 @@ const Dashboard = () => {
             <div className="content">
                 <nav>
                     <i className='bx bx-menu'></i>
-                    <form action="#">
-                        <div className="form-input">
-                            <input type="search" placeholder="" />
-                            <button className="search-btn" type="submit"></button>
-                        </div>
-                    </form>
-                    <input type="checkbox" id="theme-toggle" hidden />
-                    <label htmlFor="theme-toggle" className="theme-toggle"></label>
-                   
                     <a href="#" className="profile">
-                    <img className="logo" src={perfil} alt="logo" /></a>
+                    <img className="logo1" src={perfil} alt="logo" /></a>
                 </nav>
 
                 <main>
@@ -224,10 +187,10 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </main>
-            </div>
-            </div>
-        </>
-    );
+                </div>
+        </div>
+    </>
+);
 }
 
 export default Dashboard;

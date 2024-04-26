@@ -51,7 +51,7 @@ const Login = () => {
     if (!validarNome(nome) || !validarEmail(email) || !validarCpf(cpf) || !checked) {
       alert("Preencha corretamente todos os campos obrigatórios e aceite as leis LGPD!");
     } else {
-      alert("Boas vindas à Donolícias");
+      alert("Usuário cadastrado! Faça seu login");
       window.location.href = "/cadastro";
     }
   };
@@ -88,7 +88,7 @@ const Login = () => {
                 </div>
               </fieldset>
               <div className="footer2">
-                <button type="submit">Enviar</button>
+                <button type="submit" className="button-login">Enviar</button>
               </div>
             </form>
             <div className="terms">
